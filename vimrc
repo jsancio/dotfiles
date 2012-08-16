@@ -1,3 +1,6 @@
+runtime bundle/pathogen/autoload/pathogen.vim
+call pathogen#infect()
+
 set ruler
 
 set autoindent
@@ -9,8 +12,6 @@ set expandtab
 
 " Enable python syntax highlighting
 let python_highlight_all = 1
-
-call pathogen#infect()
 
 " Enable Solarized
 set background=dark
