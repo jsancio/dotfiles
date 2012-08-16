@@ -14,9 +14,14 @@ set expandtab
 " Enable python syntax highlighting
 let python_highlight_all = 1
 
-" Enable Solarized
+" Enable syntax highlighting
 syntax enable
+
+" Enable Solarized
 set background=dark
+"let g:solarized_termcolors = 256
+"let g:solarized_visibility = "high"
+"let g:solarized_contrast = "high"
 colorscheme solarized
 
 " Run flake8 anytime a python file is saved
