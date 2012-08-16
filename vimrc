@@ -1,5 +1,6 @@
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
+filetype plugin indent on
 
 set ruler
 
