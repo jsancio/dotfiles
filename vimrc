@@ -14,6 +14,7 @@ set expandtab
 let python_highlight_all = 1
 
 " Enable Solarized
+syntax enable
 set background=dark
 colorscheme solarized
 
