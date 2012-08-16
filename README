@@ -1,0 +1,13 @@
+Installation:
+
+    git clone git://github.com/jsancio/dotfile.git ~/.dotfiles
+
+Create symlinks:
+
+    ln -s ~/.dotfiles/vimrc ~/.vimrc
+
+Switch to the `~/.dotfiles` directory, and fetch submodules:
+
+    cd ~/.dotfiles
+    git submodule init
+    git submodule update
