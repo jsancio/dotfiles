@@ -15,3 +15,9 @@ Switch to the `~/.dotfiles` directory, and fetch submodules:
     cd ~/.dotfiles
     git submodule init
     git submodule update
+
+To update the submodules:
+
+    cd ~/.dotfiles
+    git submodule foreach git pull
+    git commit -am "Update to submodules"
