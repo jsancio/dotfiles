@@ -3,3 +3,5 @@
 	email = jsancio@gmail.com
 [core]
 	excludesfile = ~/.gitignore
+[color]
+	ui = auto
