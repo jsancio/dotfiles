@@ -9,6 +9,7 @@ Create symlinks:
     ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
     ln -s ~/.dotfiles/gitignore ~/.gitignore
     ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+    ln -s ~/.dotfiles/dircolors-solarized/dircolors.ansi-dark ~/.dircolors
 
 Switch to the `~/.dotfiles` directory, and fetch submodules:
 
