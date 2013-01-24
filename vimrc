@@ -24,6 +24,10 @@ set background=dark
 "let g:solarized_contrast = "high"
 colorscheme solarized
 
+" Use the 16 colors terminal option to get VIM to look like GVIM with
+" solarized colors.
+"set t_Co=16
+
 " Run flake8 anytime a python file is saved
 autocmd BufWritePost *.py call Flake8()
 
