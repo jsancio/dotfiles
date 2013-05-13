@@ -45,3 +45,17 @@ autocmd BufReadPost fugitive://* set bufhidden=delete
 
 " Add git branch to the status line
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
+" Configure CtrlP
+let g:ctrlp_map = ';'
+let g:ctrlp_cmd = 'CtrlP'
+
+let g:ctrlp_working_path_mode = 'ra'
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(class|so)$',
+  \ }
+
+" Configure NerdTree
+nmap \e :NERDTreeToggle<CR>
