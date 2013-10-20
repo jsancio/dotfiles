@@ -59,3 +59,6 @@ let g:ctrlp_custom_ignore = {
 
 " Configure NerdTree
 nmap \e :NERDTreeToggle<CR>
+
+" Add scala formatting support
+au BufEnter *.scala setl formatprg=~/lib/scalariform.jar\ --stdin\ --stdout
