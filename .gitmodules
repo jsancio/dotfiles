@@ -28,3 +28,18 @@
 [submodule "vim/bundle/ctrlp"]
 	path = vim/bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "vim/bundle/self"]
+	path = vim/bundle/self
+	url = git://github.com/megaannum/self.git
+[submodule "vim/bundle/forms"]
+	path = vim/bundle/forms
+	url = git://github.com/megaannum/forms.git
+[submodule "vim/bundle/vimproc"]
+	path = vim/bundle/vimproc
+	url = git://github.com/Shougo/vimproc.git
+[submodule "vim/bundle/vimshell"]
+	path = vim/bundle/vimshell
+	url = git://github.com/Shougo/vimshell.git
+[submodule "vim/bundle/vimside"]
+	path = vim/bundle/vimside
+	url = git://github.com/megaannum/vimside.git
