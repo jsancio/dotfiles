@@ -10,6 +10,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+set tags=tags;/
 
 " Enable python syntax highlighting
 let python_highlight_all = 1
