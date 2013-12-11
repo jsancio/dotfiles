@@ -10,7 +10,11 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set tags=tags;/
+set tags=.tags;/
+
+" Remove all scrollbars
+set guioptions-=L
+set guioptions-=r
 
 " Enable python syntax highlighting
 let python_highlight_all = 1

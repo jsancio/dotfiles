@@ -11,6 +11,7 @@ Create symlinks:
     ln -s ~/.dotfiles/gitconfig ~/.gitconfig
     ln -s ~/.dotfiles/dircolors-solarized/dircolors.ansi-dark ~/.dircolors
     ln -s ~/.dotfiles/Xresources ~/.Xresources
+    ln -s ~/.dotfiles/ctags ~/.ctags
 
 Switch to the `~/.dotfiles` directory, and fetch submodules:
 
