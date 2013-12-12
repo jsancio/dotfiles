@@ -10,7 +10,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set tags=.tags;/
+set tags=/Users/jose/Work/tags
 
 " Remove all scrollbars
 set guioptions-=L
