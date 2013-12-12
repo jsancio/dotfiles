@@ -43,3 +43,6 @@
 [submodule "vim/bundle/vimside"]
 	path = vim/bundle/vimside
 	url = git://github.com/megaannum/vimside.git
+[submodule "vim/bundle/vimmarkdown"]
+	path = vim/bundle/vimmarkdown
+	url = https://github.com/plasticboy/vim-markdown.git
