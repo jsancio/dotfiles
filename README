@@ -13,6 +13,10 @@ Create symlinks:
     ln -s ~/.dotfiles/Xresources ~/.Xresources
     ln -s ~/.dotfiles/ctags ~/.ctags
 
+    mkdir -p ~/.urxvt/ext
+    ln -s ~/.dotfiles/urxvt/urxvt-perls/clipboard ~/.urxvt/ext/clipboard
+    ln -s ~/.dotfiles/urxvt/urxvt-perls/keyboard-select ~/.urxvt/ext/keyboard-select
+
 Switch to the `~/.dotfiles` directory, and fetch submodules:
 
     cd ~/.dotfiles
