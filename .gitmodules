@@ -46,3 +46,9 @@
 [submodule "urxvt/urxvt-perls"]
 	path = urxvt/urxvt-perls
 	url = https://github.com/muennich/urxvt-perls.git
+[submodule "vim/bundle/vim-misc"]
+	path = vim/bundle/vim-misc
+	url = git@github.com:xolox/vim-misc.git
+[submodule "vim/bundle/vim-notes"]
+	path = vim/bundle/vim-notes
+	url = git@github.com:xolox/vim-notes.git
