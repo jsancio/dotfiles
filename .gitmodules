@@ -43,3 +43,6 @@
 [submodule "vim/bundle/vimside"]
 	path = vim/bundle/vimside
 	url = git://github.com/megaannum/vimside.git
+[submodule "urxvt/urxvt-perls"]
+	path = urxvt/urxvt-perls
+	url = https://github.com/muennich/urxvt-perls.git
