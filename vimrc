@@ -12,9 +12,11 @@ set softtabstop=2
 set expandtab
 set tags=/Users/jose/Work/tags
 
-" Remove all scrollbars
+" Remove all scrollbars, menubar and toolbar
 set guioptions-=L
 set guioptions-=r
+set guioptions-=m
+set guioptions-=T
 
 " Enable python syntax highlighting
 let python_highlight_all = 1
@@ -64,6 +66,3 @@ let g:ctrlp_custom_ignore = {
 
 " Configure NerdTree
 nmap \e :NERDTreeToggle<CR>
-
-" Add scala formatting support
-au BufEnter *.scala setl formatprg=~/lib/scalariform.jar\ --stdin\ --stdout
