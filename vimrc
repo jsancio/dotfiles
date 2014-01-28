@@ -66,3 +66,7 @@ let g:ctrlp_custom_ignore = {
 
 " Configure NerdTree
 nmap \e :NERDTreeToggle<CR>
+
+" Note options
+let g:notes_directories = ['~/Documents/Notes']
+
