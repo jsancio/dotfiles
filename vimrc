@@ -1,6 +1,13 @@
-runtime bundle/pathogen/autoload/pathogen.vim
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+filetype off
+
 call pathogen#infect()
+call pathogen#helptags()
+
 filetype plugin indent on
+
+" Enable syntax highlighting
+syntax enable
 
 set ruler
 
@@ -21,11 +28,8 @@ set guioptions-=T
 " Enable python syntax highlighting
 let python_highlight_all = 1
 
-" Enable syntax highlighting
-syntax enable
-
 " Enable Solarized
-set background=dark
+set background=light
 "let g:solarized_termcolors = 256
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
