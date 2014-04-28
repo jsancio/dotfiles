@@ -1,57 +1,9 @@
-[submodule "vim/bundle/pathogen"]
-	path = vim/bundle/pathogen
-	url = https://github.com/tpope/vim-pathogen.git
-[submodule "vim/bundle/fugitive"]
-	path = vim/bundle/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-[submodule "vim/bundle/flake8"]
-	path = vim/bundle/flake8
-	url = https://github.com/lewisc402/vim-flake8.git
-[submodule "vim/bundle/colors-solarized"]
-	path = vim/bundle/colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/bundle/clojure"]
-	path = vim/bundle/clojure
-	url = https://github.com/vim-scripts/VimClojure.git
 [submodule "dircolors-solarized"]
 	path = dircolors-solarized
 	url = https://github.com/huyz/dircolors-solarized.git
 [submodule "tmux-colors-solarized"]
 	path = tmux-colors-solarized
 	url = https://github.com/seebi/tmux-colors-solarized.git
-[submodule "vim/bundle/scala"]
-	path = vim/bundle/scala
-	url = https://github.com/derekwyatt/vim-scala.git
-[submodule "vim/bundle/ctrlp"]
-	path = vim/bundle/ctrlp
-	url = https://github.com/kien/ctrlp.vim.git
-[submodule "vim/bundle/self"]
-	path = vim/bundle/self
-	url = git://github.com/megaannum/self.git
-[submodule "vim/bundle/forms"]
-	path = vim/bundle/forms
-	url = git://github.com/megaannum/forms.git
-[submodule "vim/bundle/vimproc"]
-	path = vim/bundle/vimproc
-	url = git://github.com/Shougo/vimproc.git
-[submodule "vim/bundle/vimshell"]
-	path = vim/bundle/vimshell
-	url = git://github.com/Shougo/vimshell.git
-[submodule "vim/bundle/vimside"]
-	path = vim/bundle/vimside
-	url = git://github.com/megaannum/vimside.git
 [submodule "urxvt/urxvt-perls"]
 	path = urxvt/urxvt-perls
 	url = https://github.com/muennich/urxvt-perls.git
-[submodule "vim/bundle/vim-misc"]
-	path = vim/bundle/vim-misc
-	url = git@github.com:xolox/vim-misc.git
-[submodule "vim/bundle/vim-notes"]
-	path = vim/bundle/vim-notes
-	url = git@github.com:xolox/vim-notes.git
-[submodule "vim/bundle/tagbar"]
-	path = vim/bundle/tagbar
-	url = https://github.com/majutsushi/tagbar.git
