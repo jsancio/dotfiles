@@ -25,11 +25,8 @@ set guioptions-=r
 set guioptions-=m
 set guioptions-=T
 
-" Enable python syntax highlighting
-let python_highlight_all = 1
-
 " Enable Solarized
-set background=light
+set background=dark
 "let g:solarized_termcolors = 256
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
@@ -38,12 +35,6 @@ colorscheme solarized
 " Use the 16 colors terminal option to get VIM to look like GVIM with
 " solarized colors.
 "set t_Co=16
-
-" Run flake8 anytime a python file is saved
-autocmd BufWritePost *.py call Flake8()
-
-" Ignore some flake8 errors and warnings
-let g:flake8_ignore="E111,E501"
 
 " Match any character whose position is greater than 100
 autocmd Syntax * syn match ErrorMsg /\%100v.\+/
@@ -58,15 +49,8 @@ autocmd BufReadPost fugitive://* set bufhidden=delete
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " Configure CtrlP
-let g:ctrlp_map = ';'
-let g:ctrlp_cmd = 'CtrlP'
-
-let g:ctrlp_working_path_mode = 'ra'
-
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(class|so)$',
-  \ }
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+let g:ctrlp_use_caching = 0
 
 " Configure NerdTree
 nmap \e :NERDTreeToggle<CR>
@@ -74,3 +58,26 @@ nmap \e :NERDTreeToggle<CR>
 " Note options
 let g:notes_directories = ['~/Documents/Notes']
 
+" Python configurations
+let g:pymode = 1
+let g:pymode_trim_whitespaces = 1
+let g:pymode_options = 1
+
+" Some customization
+let mapleader = "\<space>"
+
+" Quick open and save
+nnoremap <Leader>o :CtrlP<CR>
+nnoremap <Leader>w :w<CR>
+
+" Copy and paste from clipboard
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
+" Region Expand
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
