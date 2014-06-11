@@ -26,10 +26,14 @@ set guioptions-=m
 set guioptions-=T
 
 " Enable Solarized
-set background=dark
 "let g:solarized_termcolors = 256
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
+if has("gui_running")
+  set background=dark
+else
+  set background=light
+endif
 colorscheme solarized
 
 " Use the 16 colors terminal option to get VIM to look like GVIM with
