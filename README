@@ -10,21 +10,4 @@ Create symlinks:
     ln -s ~/.dotfiles/gitignore ~/.gitignore
     ln -s ~/.dotfiles/gitconfig ~/.gitconfig
     ln -s ~/.dotfiles/dircolors-solarized/dircolors.ansi-dark ~/.dircolors
-    ln -s ~/.dotfiles/Xresources ~/.Xresources
     ln -s ~/.dotfiles/ctags ~/.ctags
-
-    mkdir -p ~/.urxvt/ext
-    ln -s ~/.dotfiles/urxvt/urxvt-perls/clipboard ~/.urxvt/ext/clipboard
-    ln -s ~/.dotfiles/urxvt/urxvt-perls/keyboard-select ~/.urxvt/ext/keyboard-select
-
-Switch to the `~/.dotfiles` directory, and fetch submodules:
-
-    cd ~/.dotfiles
-    git submodule init
-    git submodule update
-
-To update the submodules:
-
-    cd ~/.dotfiles
-    git submodule foreach git pull
-    git commit -am "Update to submodules"
