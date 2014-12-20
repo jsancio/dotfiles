@@ -1,6 +1,6 @@
 [user]
 	name = Jose Armando Garcia Sancio
-	email = jose@gmail.com
+	email = jsancio@gmail.com
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim
