@@ -1,3 +1,9 @@
+" Configure shell when running from fish
+if &shell =~ 'fish'
+  set shell=/bin/bash
+endif
+
+" Run and configure pathogen
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 filetype off
 
@@ -64,8 +70,10 @@ let g:notes_directories = ['~/Documents/Notes']
 
 " Python configurations
 let g:pymode = 1
-let g:pymode_trim_whitespaces = 1
 let g:pymode_options = 1
+let g:pymode_trim_whitespaces = 1
+let g:pymode_folding = 0
+let g:pymode_rope_complete_on_dot = 0
 
 " Some customization
 let mapleader = "\<space>"
