@@ -1,10 +1,10 @@
 [user]
-	name = Jose Armando Garcia Sancio
+	name = José Armando García Sancio
 	email = jsancio@gmail.com
 [core]
-	excludesfile = ~/.gitignore
-	editor = vim
+  excludesfile = ~/.gitignore
+  editor = vim
 [color]
-	ui = auto
+  ui = auto
 [push]
-	default = simple
+  default = simple
