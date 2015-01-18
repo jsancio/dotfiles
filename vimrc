@@ -59,7 +59,11 @@ autocmd BufReadPost fugitive://* set bufhidden=delete
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " Configure CtrlP
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+let g:ctrlp_user_command = [
+      \'.git',
+      \'cd %s && git ls-files . -co --exclude-standard',
+      \'find %s -type f',
+      \]
 let g:ctrlp_use_caching = 0
 
 " Configure NerdTree
@@ -93,3 +97,11 @@ vmap <Leader>P "+P
 " Region Expand
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="horizontal"
