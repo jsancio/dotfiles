@@ -18,7 +18,9 @@ git_bundles = [
   "git://github.com/vim-scripts/gitignore.git",
   "git://github.com/terryma/vim-expand-region.git",
   "git://github.com/GEverding/vim-hocon.git",
-  "git://github.com/fatih/vim-go.git"
+  "git://github.com/fatih/vim-go.git",
+  "git://github.com/SirVer/ultisnips.git",
+  "git://github.com/honza/vim-snippets.git"
 ]
 
 vim_org_scripts = [
