@@ -9,5 +9,6 @@ ln -s $BASEDIR/gitignore ~/.gitignore
 ln -s $BASEDIR/gitconfig ~/.gitconfig
 ln -s $BASEDIR/ctags ~/.ctags
 ln -s $BASEDIR/start_agent ~/.start_agent
+ln -s $BASEDIR/dircolors.ansi-dark ~/.dircolors
 # TODO: Fix this being a git submodule
 # ln -s $BASEDIR/dircolors-solarized/dircolors.ansi-dark ~/.dircolors
