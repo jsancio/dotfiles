@@ -1,9 +1,0 @@
-[submodule "dircolors-solarized"]
-	path = dircolors-solarized
-	url = https://github.com/huyz/dircolors-solarized.git
-[submodule "tmux-colors-solarized"]
-	path = tmux-colors-solarized
-	url = https://github.com/seebi/tmux-colors-solarized.git
-[submodule "urxvt/urxvt-perls"]
-	path = urxvt/urxvt-perls
-	url = https://github.com/muennich/urxvt-perls.git
