@@ -38,7 +38,7 @@ set guioptions-=T
 if has("gui_running")
   set background=dark
 else
-  set background=light
+  set background=dark
 endif
 colorscheme solarized
 
@@ -74,10 +74,8 @@ let g:notes_directories = ['~/Documents/Notes']
 
 " Python configurations
 let g:pymode = 1
-let g:pymode_options = 1
-let g:pymode_trim_whitespaces = 1
+let g:pymode_rope = 0
 let g:pymode_folding = 0
-let g:pymode_rope_complete_on_dot = 0
 
 " Some customization
 let mapleader = "\<space>"
