@@ -7,6 +7,7 @@ ln -s $BASEDIR/vim ~/.vim
 ln -s $BASEDIR/tmux.conf ~/.tmux.conf
 ln -s $BASEDIR/gitignore ~/.gitignore
 ln -s $BASEDIR/gitconfig ~/.gitconfig
+ln -s $BASEDIR/ctags ~/.ctags
+ln -s $BASEDIR/start_agent ~/.start_agent
 # TODO: Fix this being a git submodule
 # ln -s $BASEDIR/dircolors-solarized/dircolors.ansi-dark ~/.dircolors
-ln -s $BASEDIR/ctags ~/.ctags
