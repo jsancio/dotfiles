@@ -1,8 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
-import sys
 import os
+import shutil
 import subprocess
+import sys
 
 
 def main():
@@ -26,18 +27,19 @@ def main():
         "git://github.com/GEverding/vim-hocon.git",
         "git://github.com/fatih/vim-go.git",
         "git://github.com/SirVer/ultisnips.git",
-        "git://github.com/honza/vim-snippets.git"
+        "git://github.com/honza/vim-snippets.git",
+        "git://github.com/elzr/vim-json.git",
     ]
 
     bundle_dir = os.path.join(
         os.path.dirname(os.path.abspath(__file__)),
         'bundle')
-    print('Remove {!r}? [y/N]'.format(bundle_dir))
-    if sys.stdin.readline().strip().lower() != 'y':
-        return 1
 
     if os.path.exists(bundle_dir):
-        os.removedirs(bundle_dir)
+        print('Remove {!r}? [y/N]'.format(bundle_dir))
+        if sys.stdin.readline().strip().lower() != 'y':
+            return 1
+        shutil.rmtree(bundle_dir)
     os.mkdir(bundle_dir, 0775)
 
     for url in git_bundles:
