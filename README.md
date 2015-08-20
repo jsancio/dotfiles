@@ -7,7 +7,7 @@
   dotfiles/setup.sh
   ```
 
-2. Add the following lines to  `~/profile`
+2. Add the following lines to  `~/.profile`
 
   ```bash
   # set the go path

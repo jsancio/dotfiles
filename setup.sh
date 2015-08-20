@@ -4,6 +4,8 @@ BASEDIR=$(python -c "import os; print(os.path.realpath('$(dirname "$0")'))")
 
 ln -s $BASEDIR/vimrc ~/.vimrc
 ln -s $BASEDIR/vim ~/.vim
+ln -s $BASEDIR/vimrc ~/.nvimrc
+ln -s $BASEDIR/vim ~/.nvim
 ln -s $BASEDIR/tmux.conf ~/.tmux.conf
 ln -s $BASEDIR/gitignore ~/.gitignore
 ln -s $BASEDIR/gitconfig ~/.gitconfig
