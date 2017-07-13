@@ -36,9 +36,9 @@ set guioptions-=T
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
 if has("gui_running")
-  set background=dark
+  set background=light
 else
-  set background=dark
+  set background=light
 endif
 colorscheme solarized
 

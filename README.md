@@ -5,7 +5,11 @@
   ```
   git clone git://github.com/jsancio/dotfiles.git
   dotfiles/setup.sh
+  cd ~/.vim
+  ./update_bundlers.py
   ```
+
+  TODO: Talk about how to install Tmux Plugin Manager: https://github.com/tmux-plugins/tpm
 
 2. Add the following lines to  `~/.profile`
 
