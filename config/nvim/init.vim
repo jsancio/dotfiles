@@ -21,3 +21,12 @@ call plug#end()
 " Enable Solarized color scheme
 set background=dark
 colorscheme solarized
+
+" Configure CtrlP
+let g:ctrlp_user_command = {
+  \ 'types': {
+    \ 1: ['.git', 'cd %s && git ls-files']
+    \ },
+  \ 'fallback': 'find %s -type f'
+  \ }
+let g:ctrlp_use_caching = 0
