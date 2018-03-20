@@ -1,26 +1,21 @@
 # Installation
 
-1. Download and setup dotfiles
+## Download and setup dotfiles
 
-  ```
-  git clone git://github.com/jsancio/dotfiles.git
-  dotfiles/setup.sh
-  cd ~/.vim
-  ./update_bundlers.py
-  ```
+```bash
+git clone git://github.com/jsancio/dotfiles.git
+dotfiles/setup.sh
+```
 
-  TODO: Talk about how to install Tmux Plugin Manager: https://github.com/tmux-plugins/tpm
+## Install tmux plugins
 
-2. Add the following lines to  `~/.profile`
+After running starting tmux, press `prefix + I` (capital I, as in Install).
 
-  ```bash
-  # set the go path
-  if [ -d "$HOME/work/go" ]; then
-      export GOPATH=$HOME/work/go
-  fi
+## Add the following lines to `~/.profile`
 
-  # start ssh-agent
-  if [ -f "$HOME/.start_agent" ]; then
-      . "$HOME/.start_agent"
-  fi
+```bash
+# set the go path
+if [ -d "$HOME/work/go" ]; then
+export GOPATH=$HOME/work/go
+fi
 ```
