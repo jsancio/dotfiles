@@ -10,7 +10,9 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Enable all of the configurations
-ln -s $BASEDIR/config ~/.config
+mkdir -p ~/.config/nvim
+ln -s $BASEDIR/config/nvim/init.vim ~/.config/nvim/init.vim
+
 ln -s $BASEDIR/tmux.conf ~/.tmux.conf
 ln -s $BASEDIR/gitignore ~/.gitignore
 ln -s $BASEDIR/gitconfig ~/.gitconfig

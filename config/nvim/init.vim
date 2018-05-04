@@ -1,10 +1,15 @@
 " Specify a directory for plugins
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'autozimu/LanguageClient-neovim', {
+  \ 'branch': 'next',
+  \ 'do': 'bash install.sh',
+  \ }
+
+Plug 'cespare/vim-toml'
 Plug 'ctrlpvim/ctrlp.vim'
-
-Plug 'altercation/vim-colors-solarized'
-
+Plug 'iCyMind/NeoSolarized'
+Plug 'rust-lang/rust.vim'
 Plug 'terryma/vim-expand-region'
 
 Plug 'tpope/vim-sensible'
@@ -17,12 +22,18 @@ Plug 'tpope/vim-vinegar'
 " Initialize plugin system
 call plug#end()
 
+" Config rust-vim {{{
+let g:rustfmt_autosave = 1
+" }}}
 
-" Enable Solarized color scheme
+
+" Enable Solarized color scheme {{{
+set termguicolors
 set background=dark
-colorscheme solarized
+colorscheme NeoSolarized
+" }}}
 
-" Configure CtrlP
+" Configure CtrlP {{{
 let g:ctrlp_user_command = {
   \ 'types': {
     \ 1: ['.git', 'cd %s && git ls-files']
@@ -30,3 +41,18 @@ let g:ctrlp_user_command = {
   \ 'fallback': 'find %s -type f'
   \ }
 let g:ctrlp_use_caching = 0
+" }}}
+
+" Start Language Server Protocol configuration {{{
+let g:LanguageClient_serverCommands = {
+  \ 'rust': ['rustup', 'run', 'stable', 'rls'],
+  \ }
+
+let g:LanguageClient_diagnosticsEnable = 0
+
+let g:LanguageClient_autostart = 1
+noremap <silent> H :call LanguageClient_textDocument_hover()<CR>
+noremap <silent> Z :call LanguageClient_textDocument_definition()<CR>
+noremap <silent> R :call LanguageClient_textDocument_rename()<CR>
+noremap <silent> S :call LanguageClient_textDocument_documentSymbol()<CR>
+" }}}
