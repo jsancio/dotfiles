@@ -11,6 +11,10 @@ dotfiles/setup.sh
 
 After running starting tmux, press `prefix + I` (capital I, as in Install).
 
+## Install and update NeoVim plugins
+
+For a list of commands to install and upgrade the plugins see this [page](https://github.com/junegunn/vim-plug#commands).
+
 ## Add the following lines to `~/.profile`
 
 ```bash
