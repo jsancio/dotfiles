@@ -18,7 +18,12 @@ For a list of commands to install and upgrade the plugins see this [page](https:
 ## Add the following lines to `~/.profile`
 
 ```bash
-# set the go path
+# Swap escape key and caps lock key
+if hash setxkbmap 2>/dev/null; then
+  setxkbmap -option caps:swapescape
+fi
+
+# Set the go path
 if [ -d "$HOME/work/go" ]; then
 export GOPATH=$HOME/work/go
 fi
