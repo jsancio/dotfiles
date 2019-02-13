@@ -13,6 +13,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 mkdir -p ~/.config/nvim
 ln -s $BASEDIR/config/nvim/init.vim ~/.config/nvim/init.vim
 
+ln -s $BASEDIR/bash_aliases ~/.bash_aliases
 ln -s $BASEDIR/tmux.conf ~/.tmux.conf
 ln -s $BASEDIR/gitignore ~/.gitignore
 ln -s $BASEDIR/gitconfig ~/.gitconfig
