@@ -9,6 +9,7 @@ Plug 'autozimu/LanguageClient-neovim', {
 Plug 'cespare/vim-toml'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'iCyMind/NeoSolarized'
+Plug 'majutsushi/tagbar'
 Plug 'rust-lang/rust.vim'
 Plug 'terryma/vim-expand-region'
 
