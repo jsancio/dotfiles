@@ -10,8 +10,9 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Enable all of the configurations
-mkdir -p ~/.config/nvim
+mkdir -p ~/.config
 ln -s $BASEDIR/config/nvim/init.vim ~/.config/nvim/init.vim
+ln -s $BASEDIR/config/nvim/ftplugin/ ~/.config/nvim/ftplugin
 
 mkdir -p ~/.config/alacritty
 ln -s $BASEDIR/config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
