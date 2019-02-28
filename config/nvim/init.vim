@@ -57,3 +57,10 @@ noremap <silent> Z :call LanguageClient_textDocument_definition()<CR>
 noremap <silent> R :call LanguageClient_textDocument_rename()<CR>
 noremap <silent> S :call LanguageClient_textDocument_documentSymbol()<CR>
 " }}}
+
+" Disable arrow keys in Escape mode {{{
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+" }}}
