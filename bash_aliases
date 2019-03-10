@@ -8,3 +8,11 @@ alias llfu='exa -bghHliS --git'
 
 # mkdir
 alias mkdir='mkdir -p'
+
+# skim bash key-binding and autocompletion
+if [ -f ~/.skim/shell/completion.bash ]; then
+  . ~/.skim/shell/completion.bash
+fi
+if [ -f ~/.skim/shell/key-bindings.bash ]; then
+  . ~/.skim/shell/key-bindings.bash
+fi

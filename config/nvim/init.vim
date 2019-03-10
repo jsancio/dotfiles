@@ -13,8 +13,10 @@ Plug 'cespare/vim-toml'
 Plug 'lifepillar/vim-solarized8'
 Plug 'rust-lang/rust.vim'
 Plug 'terryma/vim-expand-region'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+"Plug 'junegunn/fzf.vim'
+Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
+Plug 'lotabout/skim.vim'
 
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'

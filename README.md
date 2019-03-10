@@ -15,6 +15,16 @@ After running starting tmux, press `prefix + I` (capital I, as in Install).
 
 For a list of commands to install and upgrade the plugins see this [page](https://github.com/junegunn/vim-plug#commands).
 
+## Install other tools
+
+```bash
+# Install rust/cargo tools
+cargo install cargo-watch
+cargo install exa
+cargo install fd-find
+cargo install ripgrep
+```
+
 ## Add the following lines to `~/.profile`
 
 ```bash
