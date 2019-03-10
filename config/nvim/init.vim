@@ -49,9 +49,9 @@ let g:ctrlp_user_command = {
 let g:ctrlp_use_caching = 0
 " }}}
 
-" Configure fzf {{{
-nnoremap <C-p> :Files<cr>
-nnoremap <C-b> :Buffers<cr>
+" Configure skim {{{
+nnoremap <C-p> :Files<CR>
+nnoremap <C-v> :Buffers<CR>
 
 let g:fzf_layout = { 'down': '~20%' }
 " }}}

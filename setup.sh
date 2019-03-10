@@ -17,6 +17,10 @@ ln -s $BASEDIR/config/nvim/ftplugin/ ~/.config/nvim/ftplugin
 mkdir -p ~/.config/alacritty
 ln -s $BASEDIR/config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
+# skim links
+ln -s ~/.skim/bin/sk ~/.local/bin/sk
+ln -s ~/.skim/bin/sk-tmux ~/.local/bin/sk-tmux
+
 # symbolic links misc
 ln -s $BASEDIR/bash_aliases ~/.bash_aliases
 ln -s $BASEDIR/tmux.conf ~/.tmux.conf
