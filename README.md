@@ -28,11 +28,6 @@ cargo install ripgrep
 ## Add the following lines to `~/.profile`
 
 ```bash
-# Swap escape key and caps lock key
-if hash setxkbmap 2>/dev/null; then
-  setxkbmap -option caps:swapescape
-fi
-
 # Set the go path
 if [ -d "$HOME/work/go" ]; then
 export GOPATH=$HOME/work/go
