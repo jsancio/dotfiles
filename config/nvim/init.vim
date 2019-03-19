@@ -7,14 +7,9 @@ Plug 'autozimu/LanguageClient-neovim', {
   \ }
 
 Plug 'cespare/vim-toml'
-"Plug 'ctrlpvim/ctrlp.vim'
-"Plug 'majutsushi/tagbar'
-"Plug 'iCyMind/NeoSolarized'
 Plug 'lifepillar/vim-solarized8'
 Plug 'rust-lang/rust.vim'
 Plug 'terryma/vim-expand-region'
-"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-"Plug 'junegunn/fzf.vim'
 Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
 Plug 'lotabout/skim.vim'
 
@@ -38,20 +33,9 @@ set background=dark
 colorscheme solarized8
 " }}}
 
-" Configure CtrlP {{{
-" TODO: remove this once I am happy with fzf
-let g:ctrlp_user_command = {
-  \ 'types': {
-    \ 1: ['.git', 'cd %s && git ls-files']
-    \ },
-  \ 'fallback': 'find %s -type f'
-  \ }
-let g:ctrlp_use_caching = 0
-" }}}
-
-" Configure skim {{{
-nnoremap <C-p> :Files<CR>
-nnoremap <C-v> :Buffers<CR>
+" Configure fzf {{{
+nnoremap <C-p> :Files<cr>
+nnoremap <C-v> :Buffers<cr>
 
 let g:fzf_layout = { 'down': '~20%' }
 " }}}
