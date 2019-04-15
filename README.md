@@ -25,11 +25,12 @@ cargo install fd-find
 cargo install ripgrep
 ```
 
-## Add the following lines to `~/.profile`
+## Configure gnome
+
+When installing alacrity under Gnome 3 we need to make it the default terminal.
 
 ```bash
-# Set the go path
-if [ -d "$HOME/work/go" ]; then
-export GOPATH=$HOME/work/go
-fi
+sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/alacritty 30
+cat /var/lib/dpkg/alternatives/x-terminal-emulator
+sudo update-alternatives --config x-terminal-emulator
 ```
