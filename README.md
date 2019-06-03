@@ -22,7 +22,6 @@ For a list of commands to install and upgrade the plugins see this [page](https:
 cargo install cargo-watch
 cargo install exa
 cargo install fd-find
-cargo install ripgrep
 ```
 
 ## Configure gnome
