@@ -6,6 +6,9 @@ alias lla='exa -la'
 alias llt='exa -T'
 alias llfu='exa -bghHliS --git'
 
+# fd
+alias fd=fdfind
+
 # mkdir
 alias mkdir='mkdir -p'
 
