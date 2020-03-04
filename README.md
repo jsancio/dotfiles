@@ -3,7 +3,7 @@
 ## Install other tools
 
 ### APT tools
-``bash
+```bash
 sudo apt install clang
 sudo apt install fd-find
 sudo apt install tig
@@ -11,7 +11,7 @@ sudo apt install unzip
 sudo apt install zip
 sudo apt install neovim
 sudo apt install tmux
-``
+```
 
 ### Binary tools
 
