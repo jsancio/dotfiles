@@ -2,6 +2,7 @@
 
 ## Install other tools
 
+### APT tools
 ``bash
 sudo apt install clang
 sudo apt install fd-find
@@ -11,6 +12,10 @@ sudo apt install zip
 sudo apt install neovim
 sudo apt install tmux
 ``
+
+### Binary tools
+
+Need to make sure that the `jq` version is greater than 1.6. These are the [releases](https://stedolan.github.io/jq/download/).
 
 ## Install Rust and Rust tools
 
