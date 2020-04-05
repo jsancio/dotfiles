@@ -25,6 +25,7 @@ Instructions for installing Rust are [here](https://forge.rust-lang.org/infra/ot
 # Install rust/cargo tools
 cargo install cargo-watch
 cargo install exa
+cargo install cargo-edit
 ```
 
 ## Install SDKMAN
