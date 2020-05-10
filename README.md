@@ -11,15 +11,24 @@ sudo apt install unzip
 sudo apt install zip
 sudo apt install neovim
 sudo apt install tmux
+sudo apt install libssl-dev
 ```
 
-### Binary tools
+### Other tools
 
+
+#### Jq
 Need to make sure that the `jq` version is greater than 1.6. These are the [releases](https://stedolan.github.io/jq/download/).
+
+#### Node.js
+
+Installation [instructions](https://github.com/nodesource/distributions/blob/master/README.md) for deb/ubuntu.
 
 ## Install Rust and Rust tools
 
 Instructions for installing Rust are [here](https://forge.rust-lang.org/infra/other-installation-methods.html#other-ways-to-install-rustup).
+
+Instrcutions for installing rust-analyzer are [here](https://rust-analyzer.github.io/manual.html)
 
 ```bash
 # Install rust/cargo tools
@@ -63,3 +72,8 @@ After starting tmux, press `prefix + I` (capital I, as in Install).
 ## Install and update NeoVim plugins
 
 For a list of commands to install and upgrade the plugins see this [page](https://github.com/junegunn/vim-plug#commands).
+
+### Install coc plugins
+
+1. Installing [rust-analyzer](https://github.com/fannheyward/coc-rust-analyzer#install): `:CocInstall coc-rust-analyzer`.
+2. Installing [scalameta](https://scalameta.org/metals/docs/editors/vim.html#installing-coc-metals): `:CocInstall coc-metals`.

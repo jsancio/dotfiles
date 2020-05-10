@@ -1,17 +1,13 @@
 " Specify a directory for plugins
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'autozimu/LanguageClient-neovim', {
-  \ 'branch': 'next',
-  \ 'do': 'bash install.sh',
-  \ }
-
 Plug 'cespare/vim-toml'
 Plug 'lifepillar/vim-solarized8'
-Plug 'rust-lang/rust.vim'
-Plug 'terryma/vim-expand-region'
 Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
 Plug 'lotabout/skim.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'rust-lang/rust.vim'
+Plug 'terryma/vim-expand-region'
 
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
