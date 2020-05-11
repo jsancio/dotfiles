@@ -3,6 +3,7 @@
 ## Install other tools
 
 ### APT tools
+
 ```bash
 sudo apt install clang
 sudo apt install fd-find
@@ -16,7 +17,6 @@ sudo apt install libssl-dev
 
 ### Other tools
 
-
 #### Jq
 Need to make sure that the `jq` version is greater than 1.6. These are the [releases](https://stedolan.github.io/jq/download/).
 
@@ -24,17 +24,23 @@ Need to make sure that the `jq` version is greater than 1.6. These are the [rele
 
 Installation [instructions](https://github.com/nodesource/distributions/blob/master/README.md) for deb/ubuntu.
 
+### Snap installation
+
+Look into this. Snap is not part of Pop OS by default.
+
+``bash
+sudo snap install ripgrep --classic
+```
+
 ## Install Rust and Rust tools
 
 Instructions for installing Rust are [here](https://forge.rust-lang.org/infra/other-installation-methods.html#other-ways-to-install-rustup).
 
-Instrcutions for installing rust-analyzer are [here](https://rust-analyzer.github.io/manual.html)
+Instructions for installing rust-analyzer are [here](https://rust-analyzer.github.io/manual.html)
 
 ```bash
-# Install rust/cargo tools
 cargo install cargo-watch
 cargo install exa
-cargo install cargo-edit
 ```
 
 ## Install SDKMAN
