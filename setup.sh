@@ -11,6 +11,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 # nvim configurations
 mkdir -p ~/.config/nvim
 ln -s $BASEDIR/config/nvim/init.vim ~/.config/nvim/init.vim
+ln -s $BASEDIR/config/nvim/coc-config.vim ~/.config/nvim/coc-config.vim
 ln -s $BASEDIR/config/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
 ln -s $BASEDIR/config/nvim/ftplugin/ ~/.config/nvim/ftplugin
 

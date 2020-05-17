@@ -1,4 +1,4 @@
-" Specify a directory for plugins
+" Specify a directory for plugins {{{
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'cespare/vim-toml'
@@ -18,6 +18,7 @@ Plug 'tpope/vim-vinegar'
 
 " Initialize plugin system
 call plug#end()
+" }}}
 
 " Config rust-vim {{{
 let g:rustfmt_autosave = 1
@@ -36,23 +37,12 @@ nnoremap <C-v> :Buffers<cr>
 let g:fzf_layout = { 'down': '~20%' }
 " }}}
 
-" Start Language Server Protocol configuration {{{
-let g:LanguageClient_serverCommands = {
-  \ 'rust': ['rustup', 'run', 'stable', 'rls'],
-  \ }
-
-let g:LanguageClient_diagnosticsEnable = 0
-
-let g:LanguageClient_autostart = 1
-noremap <silent> H :call LanguageClient_textDocument_hover()<CR>
-noremap <silent> Z :call LanguageClient_textDocument_definition()<CR>
-noremap <silent> R :call LanguageClient_textDocument_rename()<CR>
-noremap <silent> S :call LanguageClient_textDocument_documentSymbol()<CR>
-" }}}
-
 " Disable arrow keys in Escape mode {{{
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 " }}}
+
+
+source $HOME/.config/nvim/coc-config.vim
