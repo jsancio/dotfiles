@@ -2,19 +2,25 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'cespare/vim-toml'
+Plug 'junegunn/gv.vim'
 Plug 'lifepillar/vim-solarized8'
+Plug 'liuchengxu/vim-which-key'
 Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
 Plug 'lotabout/skim.vim'
+Plug 'mhinz/vim-signify'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'roxma/vim-tmux-clipboard'
 Plug 'rust-lang/rust.vim'
 Plug 'terryma/vim-expand-region'
 
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-vinegar'
+Plug 'tpope/vim-commentary'
 
 " Initialize plugin system
 call plug#end()
@@ -45,4 +51,5 @@ map <right> <nop>
 " }}}
 
 
-source $HOME/.config/nvim/coc-config.vim
+source $HOME/.config/nvim/coc.vim
+source $HOME/.config/nvim/vim-which-key.vim

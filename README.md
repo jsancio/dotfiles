@@ -10,7 +10,6 @@ sudo apt install fd-find
 sudo apt install tig
 sudo apt install unzip
 sudo apt install zip
-sudo apt install neovim
 sudo apt install tmux
 sudo apt install libssl-dev
 ```
@@ -30,6 +29,7 @@ Look into this. Snap is not part of Pop OS by default.
 
 ``bash
 sudo snap install ripgrep --classic
+sudo snap install --beta neovim --classic
 ```
 
 ## Install Rust and Rust tools
