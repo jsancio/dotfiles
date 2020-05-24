@@ -12,6 +12,7 @@ sudo apt install unzip
 sudo apt install zip
 sudo apt install tmux
 sudo apt install libssl-dev
+sudo apt install python3-proselint
 ```
 
 ### Other tools

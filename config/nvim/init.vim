@@ -12,6 +12,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'roxma/vim-tmux-clipboard'
 Plug 'rust-lang/rust.vim'
 Plug 'terryma/vim-expand-region'
+Plug 'vim-airline/vim-airline'
 
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
@@ -50,6 +51,9 @@ map <left> <nop>
 map <right> <nop>
 " }}}
 
+" TAB in normal mode will move to next buffer
+nnoremap <silent> <TAB> :bnext<CR>
+nnoremap <silent> <S-TAB> :bprevious<CR>
 
 source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/vim-which-key.vim
