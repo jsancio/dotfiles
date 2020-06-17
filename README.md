@@ -42,6 +42,7 @@ Instructions for installing rust-analyzer are [here](https://rust-analyzer.githu
 ```bash
 cargo install cargo-watch
 cargo install exa
+cargo install procs
 ```
 
 ## Install SDKMAN
