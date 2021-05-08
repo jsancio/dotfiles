@@ -1,5 +1,5 @@
 #!/bin/sh
-BASEDIR=$(python -c "import os; print(os.path.realpath('$(dirname "$0")'))")
+BASEDIR=$(python3 -c "import os; print(os.path.realpath('$(dirname "$0")'))")
 
 # tmux plugin manager
 git clone git://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

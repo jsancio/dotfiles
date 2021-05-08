@@ -8,30 +8,21 @@
 sudo apt install clang
 sudo apt install fd-find
 sudo apt install tig
-sudo apt install unzip
-sudo apt install zip
 sudo apt install tmux
 sudo apt install libssl-dev
 sudo apt install python3-proselint
+sudo apt install jq
+sudo apt install ripgrep
+sudo apt install neovim
 ```
+
+Make sure that `jq` is version 1.6 or greater.
 
 ### Other tools
 
-#### Jq
-Need to make sure that the `jq` version is greater than 1.6. These are the [releases](https://stedolan.github.io/jq/download/).
-
 #### Node.js
 
-Installation [instructions](https://github.com/nodesource/distributions/blob/master/README.md) for deb/ubuntu.
-
-### Snap installation
-
-Look into this. Snap is not part of Pop OS by default.
-
-``bash
-sudo snap install ripgrep --classic
-sudo snap install --beta neovim --classic
-```
+Installation [instructions](https://github.com/nodesource/distributions/blob/master/README.md) for deb/ubuntu. Nodejs is mainly needed for the the Coc pluging for neovim.
 
 ## Install Rust and Rust tools
 
@@ -53,12 +44,13 @@ Instructions for installing SDKMAN hare [here](https://sdkman.io/install).
 
 ```bash
 sdk install java
-sdk install gradle
 ```
+
+Note: that you may need to also install Java 8.
 
 ## Configure gnome
 
-When installing alacrity under Gnome 3 we need to make it the default terminal.
+When installing alacritty under Gnome 3 we need to make it the default terminal.
 
 ```bash
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/alacritty 30
