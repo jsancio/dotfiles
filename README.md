@@ -32,8 +32,14 @@ Instructions for installing rust-analyzer are [here](https://rust-analyzer.githu
 
 ```bash
 cargo install cargo-watch
-cargo install exa
 cargo install procs
+```
+### exa
+
+These are the [instructions](https://the.exa.website/install/linux) for installing exa. If the manual installation was used then make sure to symbolic link from the `.bash_completion.d` to the exa's bash complition file.
+
+```bash
+ln -s ~/.local/opt/exa/completions/exa.bash ~/.bash_completion.d/
 ```
 
 ## Install SDKMAN

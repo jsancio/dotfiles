@@ -25,8 +25,12 @@ mkdir -p ~/.local/bin
 ln -s ~/.skim/bin/sk ~/.local/bin/sk
 ln -s ~/.skim/bin/sk-tmux ~/.local/bin/sk-tmux
 
+# create a manual bash_completion folder
+mkdir -p ~/.bash_completion.d
+
 # symbolic links misc
 ln -s $BASEDIR/bash_aliases ~/.bash_aliases
+ln -s $BASEDIR/bash_completion ~/.bash_completion
 ln -s $BASEDIR/tmux.conf ~/.tmux.conf
 ln -s $BASEDIR/gitignore ~/.gitignore
 ln -s $BASEDIR/gitconfig ~/.gitconfig
