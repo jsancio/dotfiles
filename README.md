@@ -44,7 +44,7 @@ ln -s ~/.local/opt/exa/completions/exa.bash ~/.bash_completion.d/
 
 ## Install SDKMAN
 
-Instructions for installing SDKMAN hare [here](https://sdkman.io/install).
+These are the [instructions](https://sdkman.io/install) for installing SDKMAN.
 
 ### Install Java and Java tools
 

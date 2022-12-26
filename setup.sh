@@ -1,8 +1,10 @@
 #!/bin/sh
+set -x # Print commmands and expands variables
+
 BASEDIR=$(python3 -c "import os; print(os.path.realpath('$(dirname "$0")'))")
 
 # tmux plugin manager
-git clone git://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone git@github.com:tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # vim-plugin installation
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
