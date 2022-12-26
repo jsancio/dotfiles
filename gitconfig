@@ -1,6 +1,8 @@
+[init]
+  defaultBranch = main
 [user]
-	name = José Armando García Sancio
-	email = jsancio@gmail.com
+  name = José Armando García Sancio
+  email = jsancio@gmail.com
 [core]
   excludesfile = ~/.gitignore
   editor = vim
@@ -16,6 +18,6 @@
 [merge]
   tool = vimdiff
 [pull]
-	ff = only
+  ff = only
 [url "git@github.com:"]
-	insteadOf = https://github.com/
+  insteadOf = https://github.com/
