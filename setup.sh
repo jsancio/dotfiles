@@ -4,6 +4,7 @@ set -x # Print commmands and expands variables
 BASEDIR=$(python3 -c "import os; print(os.path.realpath('$(dirname "$0")'))")
 
 # tmux plugin manager
+# TODO: not sure if this is needed. .tmux.conf has a line about installing tpm
 git clone git@github.com:tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # vim-plugin installation
@@ -23,16 +24,17 @@ mkdir -p ~/.config/alacritty
 ln -s $BASEDIR/config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 # skim links
-mkdir -p ~/.local/bin
-ln -s ~/.skim/bin/sk ~/.local/bin/sk
-ln -s ~/.skim/bin/sk-tmux ~/.local/bin/sk-tmux
+#mkdir -p ~/.local/bin
+#ln -s ~/.skim/bin/sk ~/.local/bin/sk
+#ln -s ~/.skim/bin/sk-tmux ~/.local/bin/sk-tmux
 
 # create a manual bash_completion folder
-mkdir -p ~/.bash_completion.d
+#mkdir -p ~/.bash_completion.d
 
 # symbolic links misc
-ln -s $BASEDIR/bash_aliases ~/.bash_aliases
-ln -s $BASEDIR/bash_completion ~/.bash_completion
+# TODO: Figure out how to do the same thing for zsh
+#ln -s $BASEDIR/bash_aliases ~/.bash_aliases
+#ln -s $BASEDIR/bash_completion ~/.bash_completion
 ln -s $BASEDIR/tmux.conf ~/.tmux.conf
 ln -s $BASEDIR/gitignore ~/.gitignore
 ln -s $BASEDIR/gitconfig ~/.gitconfig

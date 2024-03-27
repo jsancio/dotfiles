@@ -13,6 +13,8 @@ alias fd=fdfind
 alias mkdir='mkdir -p'
 
 # skim bash key-binding and autocompletion
+# TODO: Move this to a better place and document the change. This configuration changes are not really aliases
+# TODO: Implement something similar for zsh. On MacOS this files are in: ls /opt/local/share/skim/shell/
 if [ -f ~/.skim/shell/completion.bash ]; then
   . ~/.skim/shell/completion.bash
 fi

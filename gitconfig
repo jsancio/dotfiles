@@ -7,6 +7,7 @@
   excludesfile = ~/.gitignore
   editor = vim
   pager = less -FRSX
+	hooksPath = /usr/local/gitconfig/hooks/
 [color]
   ui = auto
   status = auto
